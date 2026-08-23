@@ -1,3 +1,3 @@
-:HL["/_next/static/chunks/0.j7sxx9e2m0j.css","style"]
+:HL["/_next/static/chunks/06hkamtq4~xa6.css","style"]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"(moduller)","param":null,"prefetchHints":0,"slots":{"children":{"name":"rotasyonlar","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"83W6f_rlSXm2zIMqU9853"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"(moduller)","param":null,"prefetchHints":0,"slots":{"children":{"name":"rotasyonlar","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"jyRgrC7mCw4pVN4v_am6a"}
