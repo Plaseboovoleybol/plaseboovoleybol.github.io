@@ -1,3 +1,3 @@
-:HL["/_next/static/chunks/16okpiqd2xrlf.css","style"]
+:HL["/_next/static/chunks/02y7_2.8ofhbz.css","style"]
 :HL["/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"(moduller)","param":null,"prefetchHints":0,"slots":{"children":{"name":"koc-panosu","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"Y9qWh8HtqCTfEniF4Wm7n"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"(moduller)","param":null,"prefetchHints":0,"slots":{"children":{"name":"koc-panosu","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"3lJQzEn_x7alJQQqc1CYX"}
