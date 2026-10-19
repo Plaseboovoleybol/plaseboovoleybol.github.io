@@ -1,7 +1,7 @@
 // Basit offline kabugu: gezinmeler network-first (cache yedekli),
 // hash'li statik dosyalar stale-while-revalidate. Supabase gibi
 // baska origin'lere giden istekler SW'ye hic takilmaz.
-const CACHE_NAME = "voleybol-shell-1792442526631-10fc5d94";
+const CACHE_NAME = "voleybol-shell-1792442755457-b4f86879";
 
 self.addEventListener("message", (event) => {
   if (event.data?.type === "ACTIVATE_UPDATE") self.skipWaiting();
