@@ -1,10 +1,10 @@
 // Basit offline kabugu: gezinmeler network-first (cache yedekli),
 // hash'li statik dosyalar stale-while-revalidate. Supabase gibi
 // baska origin'lere giden istekler SW'ye hic takilmaz.
-const CACHE_NAME = "voleybol-shell-v1";
+const CACHE_NAME = "voleybol-shell-1792440428382-73ed3b9c";
 
-self.addEventListener("install", () => {
-  self.skipWaiting();
+self.addEventListener("message", (event) => {
+  if (event.data?.type === "ACTIVATE_UPDATE") self.skipWaiting();
 });
 
 self.addEventListener("activate", (event) => {
@@ -13,7 +13,7 @@ self.addEventListener("activate", (event) => {
       .keys()
       .then((keys) =>
         Promise.all(
-          keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key)),
+          keys.filter((key) => key.startsWith("voleybol-shell-") && key !== CACHE_NAME).map((key) => caches.delete(key)),
         ),
       )
       .then(() => self.clients.claim()),
@@ -21,6 +21,7 @@ self.addEventListener("activate", (event) => {
 });
 
 function cachePut(request, response) {
+  if (!response.ok) return response;
   const copy = response.clone();
   caches.open(CACHE_NAME).then((cache) => {
     cache.put(request, copy);
@@ -43,7 +44,7 @@ self.addEventListener("fetch", (event) => {
 
   if (request.mode === "navigate") {
     event.respondWith(
-      fetch(request)
+      fetch(request, { cache: "no-store" })
         .then((response) => cachePut(request, response))
         .catch(() =>
           caches
